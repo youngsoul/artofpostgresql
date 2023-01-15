@@ -19,7 +19,12 @@ see either:
 
 `data/f1db_csv`
 
+When importing pit_stops.csv you have to change the type for duration to TEXT because some of the times are of the form '19:23.987' - which is a crazy long pitstop.  Not sure if there is an issue with the data or what.
+
+
+
 or
 
 `data/f1db_postgres_sql`
 
+I used datagrip to import the csv or sql files.
