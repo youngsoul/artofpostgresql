@@ -8965,3 +8965,8 @@ INSERT INTO public.pit_stops (raceid, driverid, stop, lap, time, duration, milli
 INSERT INTO public.pit_stops (raceid, driverid, stop, lap, time, duration, milliseconds) VALUES (1077, 830, 2, 51, '16:18:44', '29.942', 29942);
 INSERT INTO public.pit_stops (raceid, driverid, stop, lap, time, duration, milliseconds) VALUES (1077, 854, 2, 52, '16:22:04', '30.984', 30984);
 INSERT INTO public.pit_stops (raceid, driverid, stop, lap, time, duration, milliseconds) VALUES (1077, 844, 3, 53, '16:22:17', '36.560', 36560);
+
+ALTER TABLE pit_stops
+ALTER COLUMN time TYPE time using time::time;
+
+
